@@ -1,5 +1,5 @@
 # Pyencrypt
-In this Project we will convert a .py file to .pyd file using cython to encrypt our code and increase the speed of our code by converting the python code to C code. 
+In this Project, we will convert a .py file to .pyd file using cython to encrypt our code or to increase the speed of our algorithm.
 ## Encrypt
 .pyd file is kind of .dll file which is vary hard to read. So we are going to convert our python script to .pyd to secure our code while sharing.
 ## Increase the speed
@@ -21,7 +21,7 @@ just by following this simple rules we can increase the speed of our code by 10 
 - cdef - cython only functions, can't access these from python-only code, must access within Cython, since there will be no C translation to Python for these.  
 - cpdef - C and Python. Will create a C function and a wrapper for Python. Why not *always* use cpdef? In some cases, you might have C only pointer, like a C array.  
 
-for more info refer to: https://pythonprogramming.net/introduction-and-basics-cython-tutorial
+for more info refer to [this](https://pythonprogramming.net/introduction-and-basics-cython-tutorial)
 
 ## Dependency 
 Cython: pip install cython
