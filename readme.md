@@ -16,10 +16,10 @@ just by following this simple rules we can increase the speed of our code by 10 
     cdef dict abc_dict
     cdef object thing
 
-###def, cdef, and cpdef:
-def - regular python function, calls from Python only.  
-cdef - cython only functions, can't access these from python-only code, must access within Cython, since there will be no C translation to Python for these.  
-cpdef - C and Python. Will create a C function and a wrapper for Python. Why not *always* use cpdef? In some cases, you might have C only pointer, like a C array.  
+###def, cdef, and cpdef  
+- def - regular python function, calls from Python only.  
+- cdef - cython only functions, can't access these from python-only code, must access within Cython, since there will be no C translation to Python for these.  
+- cpdef - C and Python. Will create a C function and a wrapper for Python. Why not *always* use cpdef? In some cases, you might have C only pointer, like a C array.  
 
 for more info refer to: https://pythonprogramming.net/introduction-and-basics-cython-tutorial
 
@@ -28,11 +28,11 @@ Cython: pip install cython
 
 ## How to Use
 Open terminal in the Pran_Pyencrypt Directory and run following commands:
-
-    python Pyencrypter.py -f "YOUR FIlE PATH"
-
+```commandline
+$ python Pyencrypter.py -f "YOUR FIlE PATH"
+```
 It will create a .pyd file which has all you python code and can be imported in any python file just by using 
-
-    import YOUR FILE NAME
-    
+```python
+import YOUR_FILE_NAME
+```
 Reading .pyd file is difficult but not impossible so if you want more security for your code try C++ programming and convert it in .dll or .exe file. 
