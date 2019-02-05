@@ -16,7 +16,7 @@ just by following this simple rules we can increase the speed of our code by 10 
     cdef dict abc_dict
     cdef object thing
 
-###def, cdef, and cpdef  
+### def, cdef, and cpdef
 - def - regular python function, calls from Python only.  
 - cdef - cython only functions, can't access these from python-only code, must access within Cython, since there will be no C translation to Python for these.  
 - cpdef - C and Python. Will create a C function and a wrapper for Python. Why not *always* use cpdef? In some cases, you might have C only pointer, like a C array.  
