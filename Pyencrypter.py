@@ -2,7 +2,8 @@ import shutil
 import os
 import argparse
 
-class encrypter:
+
+class Encrypter:
     def __init__(self, file_path):
         if os.path.exists(file_path):
             self.file_path = file_path
@@ -34,7 +35,9 @@ class encrypter:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Convert .py file to .pyd file using Cython')
-    parser.add_argument('-f', '--file', type=str, action='store', help='Enter the file_path(if file is in other directory else file name) which you want to convert to .pyd format\n'
+    parser.add_argument('-f', '--file', type=str, action='store', help='Enter the file_path(if file is in other '
+                                                                       'directory else file name) which you want to '
+                                                                       'convert to .pyd format\n'
                                                                        'Please use "FILE_NAME" for your file name')
     args = parser.parse_args()
-    encrypter(args.file)
+    Encrypter(args.file)

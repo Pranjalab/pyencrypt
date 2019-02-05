@@ -35,4 +35,4 @@ It will create a .pyd file which has all you python code and can be imported in 
 ```python
 import YOUR_FILE_NAME
 ```
-Reading .pyd file is difficult but not impossible so if you want more security for your code try C++ programming and convert it in .dll or .exe file. 
+Reading .pyd file is difficult but not impossible so if you want more security for your code try C++ programming and convert it in .dll or .exe file.
