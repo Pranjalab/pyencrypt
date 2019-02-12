@@ -4,10 +4,13 @@ This file can be called from terminal to convert an .py file to .pyd or .c file,
 of a .dll file for python which can be called in any python model but anyone can not read it easily
 and .c file contains our algorithm in ``c`` programing language.
 we can call the file in the following way from the terminal:
+
 ```
 $ python encrypt.py -f FILE.py
 ```
+
 This command line will create following 3 files and 1 folder:
+
 - FILE.cp[PYTHON_VERSION].[OS_NAME].pyd : Files can be used as python .dll file
 - FILE.c    : File contains algorithm in ``c`` programing language
 - FILE.pyx  : File which is used for creating .pyd file (can delete this file)
@@ -32,6 +35,7 @@ import argparse
 class Encryptor:
     """
     Class: Encryptor have following methods:
+
     - __init__(self, file_path): Takes file_path (python file path) as an argument and initialize
      other variables then calls setup_file() and encrypt() methods
     - setup_file(self): Creates a setup.py file with its context

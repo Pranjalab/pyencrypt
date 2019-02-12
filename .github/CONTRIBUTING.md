@@ -12,4 +12,4 @@ You will need:
 1. Python 3+
 2. Cython 3.0+
 
-#### Please refer to the [documentation](./readme.md) for more information about project 
+Please refer to the [documentation](../readme.md) for more information about project 
